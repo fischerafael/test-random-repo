@@ -15,7 +15,7 @@ export const NextedIfs = () => {
 
   if (!email) return <p>No email found for this user</p>;
 
-  // anothr
+  // another
 
   return (
     <div>
