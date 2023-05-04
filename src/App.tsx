@@ -1,7 +1,11 @@
-import { NextedIfs } from "./pages/NestedIfs";
+import { PageDependencyInjection } from "./pages/DependencyInjection";
+import {
+  useFetchPokemon,
+  useFetchPokemonInMemory,
+} from "./pages/DependencyInjection/hooks";
 
 function App() {
-  return <NextedIfs />;
+  return <PageDependencyInjection useGetPokemon={useFetchPokemonInMemory} />;
 }
 
 export default App;
