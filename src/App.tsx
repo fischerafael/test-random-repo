@@ -3,9 +3,10 @@ import {
   useFetchPokemon,
   useFetchPokemonInMemory,
 } from "./pages/DependencyInjection/hooks";
+import { PageIIFE } from "./pages/iife";
 
 function App() {
-  return <PageDependencyInjection useGetPokemon={useFetchPokemonInMemory} />;
+  return <PageIIFE />;
 }
 
 export default App;
