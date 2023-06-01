@@ -3,10 +3,11 @@ import {
   useFetchPokemon,
   useFetchPokemonInMemory,
 } from "./pages/DependencyInjection/hooks";
+import { MapPage } from "./pages/Map";
 import { PageIIFE } from "./pages/iife";
 
 function App() {
-  return <PageIIFE />;
+  return <MapPage />;
 }
 
 export default App;
