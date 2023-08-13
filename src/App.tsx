@@ -1,3 +1,4 @@
+import { Decouple } from "./pages/Decouple";
 import { PageDependencyInjection } from "./pages/DependencyInjection";
 import {
   useFetchPokemon,
@@ -7,7 +8,7 @@ import { MapPage } from "./pages/Map";
 import { PageIIFE } from "./pages/iife";
 
 function App() {
-  return <MapPage />;
+  return <Decouple />;
 }
 
 export default App;
