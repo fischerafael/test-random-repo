@@ -1,14 +1,12 @@
-import { Decouple } from "./pages/Decouple";
-import { PageDependencyInjection } from "./pages/DependencyInjection";
-import {
-  useFetchPokemon,
-  useFetchPokemonInMemory,
-} from "./pages/DependencyInjection/hooks";
-import { MapPage } from "./pages/Map";
-import { PageIIFE } from "./pages/iife";
+import { StateManager } from "./pages/StateManager";
+import { RecoilRoot } from "recoil";
 
 function App() {
-  return <Decouple />;
+  return (
+    <RecoilRoot>
+      <StateManager />
+    </RecoilRoot>
+  );
 }
 
 export default App;
