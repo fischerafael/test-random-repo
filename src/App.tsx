@@ -1,10 +1,11 @@
-import { StateManager } from "./pages/StateManager";
 import { RecoilRoot } from "recoil";
+import { States } from "./pages/States";
+import { useRecoilStates } from "./pages/States/hook";
 
 function App() {
   return (
     <RecoilRoot>
-      <StateManager />
+      <States useStateManagement={useRecoilStates} />
     </RecoilRoot>
   );
 }
